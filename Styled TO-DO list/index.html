@@ -5,50 +5,70 @@
     <meta charset="utf-8">
     <title>Styled To-Do List</title>
     <mata name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <main>
         <h1>TO-DO list</h1>
-        <ul todo-list>
-            <input
-            type="checkbox"
-            id="first"
-            name="first"
-            value="first"
-            />
-            <label for="first">Grocery Shopping</label>
-            <li>Online price checks</li>
+        <ul class="todo-list">
+            <li class="mainList">
+                <input
+                    type="checkbox"
+                    id="first"
+                    name="first"
+                    value="first"
+                />
+                <label for="first">Grocery Shopping</label>
+            
+                <ul class="sub-item">
+                    <li> <a class="sub-item-link" href="https://www.checkers.co.za/" target="_blank">Online shopping</a></li>
+                </ul>
 
-            <input
-            type="checkbox"
-            id="second"
-            name="second"
-            value="second"
-            />
-            <label for="second">Christmas Gifts</label>
-            <li>Shop at Shein</li>
+            </li>
 
-            <input
-            type="checkbox"
-            id="third"
-            name="third"
-            value="third"
-            />
-            <label for="third">Dentist's appointment</label>
-            <li>Doctors calender</li>
+            <li class="mainList">
+                <input
+                    type="checkbox"
+                    id="second"
+                    name="second"
+                    value="second"
+                />
+                <label for="second">Buy Christmas Gifts</label>
+            
+                <ul class="sub-item">
+                    <li> <a class="sub-item-link" href="https://za.shein.com/" target="_blank">Shop at Shein</a></li>
+                </ul>
 
-            <input
-            type="checkbox"
-            id="forth"
-            name="forth"
-            value="forth"
-            />
-            <label for="forth">Play with Jerry</label>
-            <li>View Itenary list</li>
+            </li>
 
+            <li class="mainList">
+                <input
+                    type="checkbox"
+                    id="third"
+                    name="third"
+                    value="third"
+                />
+                <label for="third">Book dentist's appointment</label>
+            
+                <ul class="sub-item">
+                    <li> <a class="sub-item-link" href="https://letagodental.co.za/contact/" target="_blank">Fill appointment request form</a></li>
+                </ul>
 
+            </li>
+
+            <li class="mainList">
+                <input
+                    type="checkbox"
+                    id="forth"
+                    name="forth"
+                    value="forth"
+                />
+                <label for="forth">Anniversary Vacation</label>
+            
+                <ul class="sub-item">
+                    <li> <a class="sub-item-link" href="https://letagodental.co.za/contact/" target="_blank">Book a Hotel</a></li>
+                </ul>
 
         </ul>
 
